@@ -23,10 +23,11 @@ jobs:
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
+      - run: bun run start
       - name: Install Dependencies
         run: bun install
       - name: Build
-        run: bun run start
+        run: bun run build
       # - name: 404.html
       #   run: cp /dist/index.html /dist/404.html
       - name: Setup Pages
