@@ -25,7 +25,6 @@ jobs:
           bun-version: latest
       - name: Install Dependencies
         run: bun install
-      - run: bun ./src/index.ts
       - name: Build
         run: bun run build
       - name: 404.html
