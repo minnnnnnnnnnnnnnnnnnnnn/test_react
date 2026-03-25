@@ -27,6 +27,8 @@ jobs:
         run: bun install
       - name: Build
         run: bun run build
+      - name: Deploy
+        run: bun run deploy
       - name: 404.html
         run: cp ./dist/index.html ./dist/404.html
       - name: Setup Pages
